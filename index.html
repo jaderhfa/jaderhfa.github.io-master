@@ -1,87 +1,256 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Curriculum</title>
-</head>
-  
-  <style>
-body {
-    background-color: black;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-h1 {
-    color: white;
-    text-align: center;
-    
-}
-    
-h2 {
-    color: white;
-    text-align: center;
-    border: solid white;
-}
+    <title>Carousel Template for Bootstrap</title>
 
-    
-h3 {
-    color: white;
-    text-align: center;
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery-3.3.1.slim.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
 
-}
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <!--Chart.js-->>
+     <script async="" src="//www.google-analytics.com/analytics.js">
+    </script>
     
-p {
-    font-family: Arial;
-    color: white;
-    text-align: center;
-}
+    <script src="Chart.bundle.js"></script>
     
+    <style type="text/css">/* Chart.js */
+    @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}
+    @keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+    </style>
+
+	<script src="utils.js"></script>
+    
+
+
+  </head>
+
+<style>
+
+
 </style>
-  
-  
+
+
 <body>
 
-<h1>Jader Henrique Faria Amorim</h1>
-<p>jaderhfa@hotmail.com.</p>
-<p>Brasileiro, Solteiro, 25 anos</p> 
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Curriculo Pessoal</a>
+      </nav>
+    </header>
 
-<h2>FORMAÇÃO</h2> 
-  
-<p>  Ensino superior cursando Sistemas de Informação, Universidade Federal de Goiás – término: Dezembro de 2019.</p> 
-<p>  Ensino médio completo. </p>
+    <main role="main">
 
-  
-<h2>OUTROS CURSOS</h2> 
-  
- <p>  Assistente Administrativo - FPC (Fundação Pró Cerrado)</p> 
- <p>  Assistente Administrativo - YES cursos </p>
- <p>  Curso técnico em Manutenção de Computadores - Microcamp </p>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img class="img" src="bigdata.jpg">
+          </div>
+        </div>
+      </div>
 
-<h2>IDIOMAS</h2> 
-  
-<p>   Inglês nível: Básico </p>
-<p>   Espanhol: Básico </p>
-  
-<h2>EXPERIÊNCIA PROFISSIONAL</h2>
-  
-<h3>Fundação Pró-Cerrado/ IOG (Instituto Ortopédico de Goiânia)</h3> 
-<p>Área: Arquivo </p>
-<p>Cargo: Assistente Administrativo (Jovem Aprendiz)</p> 
-<p>Início: julho/2009 Término: junho/2011 </p>
 
-<h3>Instituto Ortopédico de Goiânia</h3> 
-<p>Área: Emergência Hospitalar Ortopédica </p>
-<p>Cargo: Recepcionista </p>
-<p>Início: janeiro/2012 Término: dezembro/2016</p> 
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<h3>Nutricional Comercio de Alimentos</h3> 
-<p>Área: Entregas </p>
-<p>Cargo: Motorista </p>
-<p>Início: janeiro/2018 Término: Atividade Atual</p> 
+      <div class="container marketing">
 
-<h2>INFORMAÇÕES ADICIONAIS</h2> 
-  
-<p> Conhecimentos nas áreas requisitadas obtidos durante o curso de formação.</p> 
-<p> Disponibilidade nos turnos matutino e vespertino.</p>
-  
-  
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="rounded-circle" src="perfil.jpg" alt="Generic placeholder image" width="240" height="240">
+            <h3 class="featurette-heading">Jader Henrique Faria Amorim</h3>
+            <p class="lead">Estudante de Sistemas de Informação na Universidade Federal de Goiás desde 2016</p>
+            <p class="lead">Brasileiro, Solteiro, 26 anos.</p>
+        </div><!-- /.row -->
+       </div>
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Formação.</h2>
+            <p class="lead">Ensino Superior Imcompleto (cursando)</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image" src="INFVertical.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Cursos</h2>
+            <p class="lead">Assistente Administrativo.</p>
+            <p class="lead">Fundação Pro-Cerrado (2009-2011)</p>
+            <p class="lead">Yes treinamentos (2010)</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image" src="Cursos Assistente Administrativo.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Idiomas</h2>
+            <p class="lead">Ingles Basico</p>
+            <p class="lead">Espanhol Básico</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image" src="codigoingles.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+         <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Experiencia Profissional</h2>
+            </br>
+            <p class="lead"> Fundação Pró-Cerrado/ IOG (Instituto Ortopédico de Goiânia)</p>
+            <p class="lead">Àrea : Arquivo</p>
+            <p class="lead">Cargo: Jovem Aprendiz</p>
+            <p class="lead">Inicio : Julho-2009 Termino: Junho-2011 </p>
+            </br>
+            <p class="lead">Instituto Ortopédico de Goiânia</p>
+            <p class="lead">Área: Emergência Hospitalar Ortopédica</p>
+            <p class="lead">Cargo: Recepcionista</p>
+            <p class="lead">Início: janeiro/2012 Término: dezembro/2016</p>
+            </br>
+            <p class="lead">Nutricional Comercio de Alimentos</p>
+            <p class="lead">Área: Entregas</p>
+            <p class="lead">Cargo: Motorista</p>
+            <p class="lead">Início: janeiro/2018 Término: Atividade Atual</p>
+
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image" src="experienciaprofissional.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+
+
+         <div class="row featurette">
+          
+          <div class="col-md-12">
+            <h2 class="featurette-heading">Informações Adicionais</h2>
+            <p class="lead">Experiencia na area de T.I. obtida na formação.</p>
+          
+     <div id="canvas-holder" style="width:60%">
+     <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"></div>
+        
+        <canvas id="chart-area" width="540" height="540" class="chartjs-render-monitor" style="display: block; width: 540px; height: 540px;"></canvas>
+               
+    </div>
+        
+    
+          
+          </div>  
+         </div>
+        
+        
+        <hr class="featurette-divider">
+           
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Inicio</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+
+
+<script>
+		
+
+		var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						20,
+						20,
+						5,
+						5,
+						10,
+            10,
+            15,
+            15,
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.orange,
+						window.chartColors.yellow,
+						window.chartColors.green,
+						window.chartColors.blue,
+            window.chartColors.purple,
+            window.chartColors.blue,
+            window.chartColors.yellow
+					],
+          
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'C',
+					'Java',
+					'JavaScript',
+					'PHP',
+					'MySql',
+          'Redes',
+          'HTML',
+          'CSS',
+
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('chart-area').getContext('2d');
+			window.myPie = new Chart(ctx, config);
+		};
+
+	</script>
+
+
+
 </body>
 </html>
+
